@@ -26,7 +26,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "gestion-commande"
+    }
+  },
+  "defaultProject": "gestion-commande",
+  "cli": {
+    "analytics": "e8cb11a4-e868-44fd-b35d-696cb2c2db48"
+  }
 }

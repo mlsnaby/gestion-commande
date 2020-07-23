@@ -1,0 +1,39 @@
+ <!--button (click)="clickEventHandler()"  class='btn btn-info'>ADD</button-->
+ <br/>
+ <table class="table">
+     <thead>
+       <tr>
+        
+         <th scope="col">CODE</th>
+         <th scope="col">DESIGNATION</th>
+         <th scope="col">DATE AJOUT</th>
+         <th scope="col">DISPONIBILITE</th>
+         <th scope="col">PRIX NORMAL</th>
+         <th scope="col">PRIX MINIMUM</th>
+         <th scope="col">STOCKS</th>
+         <th scope="col">STOCKS</th>
+         <th scope="col">STOCKS</th>
+         
+       </tr>
+     </thead>
+     <tbody>
+       <tr *ngFor='let prod of produit'>
+         <td scope="col">#</td>
+          <td scope="col">{{prod.code}}</td>
+         <td scope="col">{{prod.designation}}</td>
+         <td scope="col">{{prod.stock}}</td>
+         <td scope="col">{{prod.disponibilite}}</td>
+         <td scope="col">{{prod.prixnormal}}</td>
+         <td scope="col">{{prod.prixmin}}</td>
+         <td scope="col">{{prod.dateajout}}</td>
+         <td scope="col">{{prod.validite}}</td>
+         <td scope="col">{{prod.etat}}</td>
+         
+         <td scope="col">
+             <!--button type="button" (click)="editMedecin(prod)" class='btn btn-info'>EDIT</button>
+             <button (click)="remove(prod)" class='btn btn-info'>REMOVE</button-->
+         </td>
+     </tr>
+     </tbody>
+   </table>
+ 
